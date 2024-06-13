@@ -13,10 +13,13 @@
 		0D90B75B2C104BD000CBC9B0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0D90B75A2C104BD000CBC9B0 /* Base */; };
 		0D90B75D2C104BD100CBC9B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D90B75C2C104BD100CBC9B0 /* Assets.xcassets */; };
 		0D90B7602C104BD100CBC9B0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0D90B75F2C104BD100CBC9B0 /* Base */; };
+		0D90B7682C10768500CBC9B0 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90B7672C10768500CBC9B0 /* ListTableViewCell.swift */; };
+		0D90B76A2C12ED7400CBC9B0 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90B7692C12ED7400CBC9B0 /* ToDoItem.swift */; };
+		0D90B78C2C1831B100CBC9B0 /* ListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90B78B2C1831B100CBC9B0 /* ListTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0D90B7502C104BD000CBC9B0 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D90B7502C104BD000CBC9B0 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D90B7532C104BD000CBC9B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D90B7552C104BD000CBC9B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0D90B7572C104BD000CBC9B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		0D90B75C2C104BD100CBC9B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D90B75F2C104BD100CBC9B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D90B7612C104BD100CBC9B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D90B7672C10768500CBC9B0 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		0D90B7692C12ED7400CBC9B0 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		0D90B78B2C1831B100CBC9B0 /* ListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +46,7 @@
 		0D90B7472C104BD000CBC9B0 = {
 			isa = PBXGroup;
 			children = (
-				0D90B7522C104BD000CBC9B0 /* Demo */,
+				0D90B7522C104BD000CBC9B0 /* ToDoList */,
 				0D90B7512C104BD000CBC9B0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +54,34 @@
 		0D90B7512C104BD000CBC9B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D90B7502C104BD000CBC9B0 /* Demo.app */,
+				0D90B7502C104BD000CBC9B0 /* ToDoList.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0D90B7522C104BD000CBC9B0 /* Demo */ = {
+		0D90B7522C104BD000CBC9B0 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
 				0D90B7532C104BD000CBC9B0 /* AppDelegate.swift */,
 				0D90B7552C104BD000CBC9B0 /* SceneDelegate.swift */,
 				0D90B7572C104BD000CBC9B0 /* ViewController.swift */,
+				0D90B7692C12ED7400CBC9B0 /* ToDoItem.swift */,
 				0D90B7592C104BD000CBC9B0 /* Main.storyboard */,
+				0D90B7672C10768500CBC9B0 /* ListTableViewCell.swift */,
+				0D90B78B2C1831B100CBC9B0 /* ListTableView.swift */,
 				0D90B75C2C104BD100CBC9B0 /* Assets.xcassets */,
 				0D90B75E2C104BD100CBC9B0 /* LaunchScreen.storyboard */,
 				0D90B7612C104BD100CBC9B0 /* Info.plist */,
 			);
-			path = Demo;
+			path = ToDoList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0D90B74F2C104BD000CBC9B0 /* Demo */ = {
+		0D90B74F2C104BD000CBC9B0 /* ToDoList */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D90B7642C104BD100CBC9B0 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildConfigurationList = 0D90B7642C104BD100CBC9B0 /* Build configuration list for PBXNativeTarget "ToDoList" */;
 			buildPhases = (
 				0D90B74C2C104BD000CBC9B0 /* Sources */,
 				0D90B74D2C104BD000CBC9B0 /* Frameworks */,
@@ -82,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = Demo;
+			name = ToDoList;
 			productName = Demo;
-			productReference = 0D90B7502C104BD000CBC9B0 /* Demo.app */;
+			productReference = 0D90B7502C104BD000CBC9B0 /* ToDoList.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0D90B74B2C104BD000CBC9B0 /* Build configuration list for PBXProject "Demo" */;
+			buildConfigurationList = 0D90B74B2C104BD000CBC9B0 /* Build configuration list for PBXProject "ToDoList" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0D90B74F2C104BD000CBC9B0 /* Demo */,
+				0D90B74F2C104BD000CBC9B0 /* ToDoList */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D90B7582C104BD000CBC9B0 /* ViewController.swift in Sources */,
+				0D90B78C2C1831B100CBC9B0 /* ListTableView.swift in Sources */,
+				0D90B7682C10768500CBC9B0 /* ListTableViewCell.swift in Sources */,
+				0D90B76A2C12ED7400CBC9B0 /* ToDoItem.swift in Sources */,
 				0D90B7542C104BD000CBC9B0 /* AppDelegate.swift in Sources */,
 				0D90B7562C104BD000CBC9B0 /* SceneDelegate.swift in Sources */,
 			);
@@ -294,6 +306,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ToDoList;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,6 +334,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ToDoList;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -342,7 +356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0D90B74B2C104BD000CBC9B0 /* Build configuration list for PBXProject "Demo" */ = {
+		0D90B74B2C104BD000CBC9B0 /* Build configuration list for PBXProject "ToDoList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D90B7622C104BD100CBC9B0 /* Debug */,
@@ -351,7 +365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D90B7642C104BD100CBC9B0 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+		0D90B7642C104BD100CBC9B0 /* Build configuration list for PBXNativeTarget "ToDoList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D90B7652C104BD100CBC9B0 /* Debug */,
